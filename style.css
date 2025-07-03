@@ -234,3 +234,25 @@ footer {
 .nav.next {
   right: 10px;
 }
+
+.avis {
+  background: #f4f4fa;
+  padding: 60px 20px;
+}
+
+.avis h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #4b0082;
+  margin-bottom: 30px;
+}
+
+.avis a {
+  color: #4b0082;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.avis a:hover {
+  color: #0099cc;
+}
