@@ -172,7 +172,7 @@ header { background: rgba(20,20,28,.6); }
   .carousel, .card { background: #14151b; }
   .nav { background: rgba(40,34,60,.9); }
   .dot { border-color: #14151b; }
-}
+
 .carousel{transition:height .35s ease;}
 
 
@@ -253,3 +253,15 @@ header { background: #fff; border-bottom: 1px solid var(--border); }
 /* Show the gradient underline when the link is focused/pressed */
 .nav-desktop a:focus-visible::after,
 .nav-desktop a:active::after { transform: scaleX(1); }
+
+/* Contact : mêmes couleurs que le site (pas de cartes blanches) */
+#contact .card {
+  background: var(--bg);
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/* (Optionnel) si tu veux aussi aplatir la bande derrière */
+#contact {
+  background: var(--bg);
+}
