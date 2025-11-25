@@ -1,344 +1,210 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light" />
-  <title>La Trame de Bertrand – Bien-être à Lieuron</title>
-  <meta name="description" content="La Trame de Bertrand – Méthode vibratoire douce pour réharmoniser le corps et l'esprit. Séances à Lieuron avec Bertrand Avril, praticien certifié." />
-  <meta name="theme-color" content="#6b21a8" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="La Trame de Bertrand – Bien-être à Lieuron" />
-  <meta property="og:description" content="Méthode vibratoire douce pour réharmoniser le corps et l'esprit. Séances à Lieuron avec Bertrand Avril." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://i.imgur.com/zGtWjIG.jpeg" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- AOS (scroll animations) -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-  <!-- External styles -->
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Trame de Bertrand – Bien-être à Lieuron</title>
+    <meta name="description" content="La Trame de Bertrand – Méthode vibratoire douce pour réharmoniser le corps et l'esprit. Séances à Lieuron avec Bertrand Avril.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <!-- ===== HEADER ===== -->
-  <header>
-  <div class="container header-inner">
-    <a href="#accueil" class="logo" aria-label="Accueil – La Trame de Bertrand"><span class="grad">La Trame de Bertrand</span></a>
-    <nav class="nav-desktop" aria-label="Navigation principale (bureau)">
-      <a href="#accueil">Accueil</a>
-      <a href="#presentation">Présentation</a>
-      <a href="#therapie">La Trame</a>
-      <a href="#praticien">Le praticien</a>
-      <a href="#avis">Avis</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="topMenu"><span></span></button>
-  </div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">La Trame de Bertrand</a>
+            
+            <nav class="main-nav" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#methode">La Trame</a></li>
+                    <li><a href="#deroulement">La Séance</a></li>
+                    <li><a href="#praticien">Le Praticien</a></li>
+                    <li><a href="#lieu">Le Lieu</a></li>
+                    <li><a href="#avis">Avis</a></li>
+                    <li><a href="#contact" class="btn-nav">Prendre RDV</a></li>
+                </ul>
+            </nav>
 
-  <!-- Menu déroulant -->
-  <nav class="dropdown" id="topMenu" aria-label="Navigation principale" aria-hidden="true">
-    <a href="#accueil">Accueil</a>
-    <a href="#presentation">Présentation</a>
-    <a href="#therapie">La Trame</a>
-    <a href="#praticien">Le praticien</a>
-    <a href="#avis">Avis</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-  <!-- ===== HERO ===== -->
-  <section id="accueil" class="hero hero--image" aria-label="Introduction" style="--hero-img:url('https://i.imgur.com/zGtWjIG.jpeg')">
-    <div class="container wrap" data-aos="fade-up">
-      <div>
-        <span class="eyebrow">Bien-être • Équilibre • Respiration</span>
-        <h1 id="contenu">Une approche douce pour <span class="grad">réharmoniser le corps</span></h1>
-        <p class="lead">La Trame est une méthode vibratoire qui relance la circulation de l'information dans l'organisme pour retrouver un équilibre global. Séances à Lieuron avec <strong>Bertrand Avril</strong>.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="tel:0664882125">📞 Prendre rendez‑vous</a>
-          <a class="btn" href="#presentation">ℹ️ En savoir plus</a>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </div>
-      <div class="hero-figure">
-        <div class="hero-blob" aria-hidden="true"></div>
-        <figure class="hero-card" data-aos="zoom-in" data-aos-delay="80">
-          <img src="https://i.imgur.com/zGtWjIG.jpeg" alt="Lieu de pratique – roulotte et jardin" width="1280" height="960" loading="eager" decoding="async" />
-        </figure>
-      </div>
-    </div>
-    <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-    <defs>
-      <linearGradient id="gradWave" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0%" stop-color="#ffffff"/>
-        <stop offset="100%" stop-color="#ffffff"/>
-      </linearGradient>
-    </defs>
-    <path d="M0,64 C240,140 480,0 720,64 C960,128 1200,80 1440,32 L1440,120 L0,120 Z" fill="url(#gradWave)"></path>
-  </svg>
-  </section>
+    </header>
 
-  <!-- ===== PRÉSENTATION ===== -->
-  <section id="presentation" aria-label="La méthode La Trame">
-    <div class="container">
-      <div class="section-head" data-aos="fade-up">
-        <h2>À l’origine de <span class="grad">La Trame</span></h2>
-        <p>Créée par <strong>Patrick Burensteinas</strong> dans les années 1990, La Trame agit sur la circulation de l'information dans le corps afin de restaurer l'équilibre.</p>
-      </div>
-      <div class="prose" data-aos="fade-up" data-aos-delay="80">
-        <p>La méthode met en évidence un plan d’information nécessaire au bon fonctionnement du corps, comparable à un canevas — les fils de trame d’un tissu — sur lequel circule l’information essentielle aux cellules et organes.</p>
-        <p>Une perturbation de cette circulation peut entraîner des déséquilibres, voire du mal‑être. L’objectif de la séance est de relancer cette circulation pour retrouver un équilibre global.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== THERAPIE / DESCRIPTIF ===== -->
-  <section id="therapie" aria-label="La Trame – Pour qui, comment, quel but ?">
-    <div class="container">
-      <div class="section-head" data-aos="fade-up">
-        <h2><span class="grad">La Thérapie </span>: Pour qui ? Comment ? Quel but ?</h2>
-      </div>
-      <div class="prose" data-aos="fade-up" data-aos-delay="80">
-        <p>Elle s’adresse à tous, adulte ou enfant, agit sur la globalité du corps, n’a aucune vocation à traiter une maladie. Aucun diagnostic médical n’est effectué ni interprétation psychologique. Une séance de Trame ne retarde, ne remplace ou n’annule en aucune façon une consultation médicale. Elle peut juste s’appliquer en accompagnement ou complément d’un suivi effectué par une personne du corps médical.</p>
-        <p>Le praticien pose les mains sur la personne habillée et réalise une séquence de 16 gestes codifiés par un toucher subtil sur le tronc, les pieds et la tête. Cette pratique ne s’apparente en aucune façon à un massage.</p>
-        <p>Lors de la séance, il s’opère une libération Progressive des émotions, permettant une meilleure circulation de l’information –<br>
-        Après la séance, il s’en suit le plus souvent un état d’apaisement qui permet le rééquilibrage et l’intégration du soin.<br>
-        Les séances sont idéalement espacées de 3 à 4 semaines afin de favoriser une circulation harmonieuse et de permettre au corps de s’autoréguler.</p>
-        <p>Les bienfaits couramment observés sont :</p>
-        <ul>
-          <li>Apaisement</li>
-          <li>Clarification et capacité à faire des choix et prendre des décisions</li>
-          <li>Émergence de nouveaux potentiels</li>
-          <li>Libération des émotions prisonnières (colère, peur, tristesse) qui créent des blocages et entravent la circulation harmonieuse</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PRATICIEN ===== -->
-  <section id="praticien" aria-label="Le praticien">
-    <div class="container">
-      <div class="section-head" data-aos="fade-up">
-        <h2>Bertrand Avril, <span class="grad">praticien certifié</span></h2>
-        <p>Mon parcours vers l’accompagnement au mieux‑être.</p>
-      </div>
-      <div class="prose" data-aos="fade-up" data-aos-delay="80">
-        <p>Je m’appelle Bertrand Avril, je me sens au service du mieux-être pour elles et ceux qui ne trouvent pas de solution pour se libérer, ou pour mieux se connaître et s’apprécier.</p>
-        <p>Depuis l’enfance, je cherche à comprendre comment le monde et les autres fonctionnent. Rapidement attiré par les sciences occultes, vers l’âge de 18 ans je me suis rapproché d’une sage guérisseuse qui m’a appris à spiritualiser différents événements vécus et m’a initié au monde subtil pendant de nombreuses années.</p>
-        <p>À 47 ans, j’ai vécu une expérience de vie qui a été déterminante : un infarctus m’a transformé. Après avoir eu plusieurs métiers dans le bâtiment (sculpture, maçonnerie, taille de pierre, menuiserie), mon avenir professionnel s’est tourné naturellement vers le bien-être.</p>
-        <p>J’ai donc suivi une formation de 18 mois qui m’a permis d’obtenir la certification de praticien de la trame.</p>
-        <p>Depuis avril 2023, j’exerce dans une roulotte avec des pierres naturelles, encore des pierres…</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== GALERIE / CARROUSEL ===== -->
-  <section aria-label="Galerie photos">
-    <div class="container" data-aos="fade-up">
-      <div class="section-head">
-        <h2>Quelques vues du <span class="grad">lieu</span></h2>
-        <p>Découvrez l’ambiance du cabinet et de la roulotte.</p>
-      </div>
-
-      <div class="gallery-grid" id="gallery">
-        <figure><img src="https://i.imgur.com/IpY6Fvs.jpeg" alt="Entrée du cabinet" width="1200" height="900" loading="lazy" decoding="async"></figure>
-        <figure><img src="https://i.imgur.com/1R6dPvQ.jpeg" alt="Salle d’attente" width="1200" height="900" loading="lazy" decoding="async"></figure>
-        <figure><img src="https://i.imgur.com/1uZKZH4.jpeg" alt="Roulotte vue de loin" width="1200" height="900" loading="lazy" decoding="async"></figure>
-        <figure><img src="https://i.imgur.com/zGtWjIG.jpeg" alt="Vue jardin et roulotte" width="1200" height="900" loading="lazy" decoding="async"></figure>
-        <figure><img src="https://i.imgur.com/UHkROub.jpeg" alt="Panneau d’entrée La maison du bien‑être" width="1200" height="900" loading="lazy" decoding="async"></figure>
-        <figure><img src="https://i.imgur.com/waN1Dz8.jpeg" alt="Intérieur de la roulotte" width="1200" height="900" loading="lazy" decoding="async"></figure>
-        <figure><img src="https://i.imgur.com/RCc3fSS.jpeg" alt="Flyers La Trame de Bertrand" width="1200" height="900" loading="lazy" decoding="async"></figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lightbox overlay -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Agrandissement de l’image" aria-hidden="true">
-    <button class="lb-close" aria-label="Fermer">×</button>
-    <button class="lb-nav prev" aria-label="Image précédente">❮</button>
-    <img id="lightbox-img" alt="Image agrandie">
-    <button class="lb-nav next" aria-label="Image suivante">❯</button>
-  </div>
-
-  <!-- ===== AVIS GOOGLE ===== -->
-  <section id="avis" class="avis" aria-label="Avis Google">
-    <div class="container" data-aos="fade-up">
-      <div class="section-head">
-        <h2>Ils en parlent <span class="grad">le mieux</span></h2>
-        <p>Consultez les retours d’expérience sur Google.</p>
-      </div>
-      <div class="card">
-        <div class="elfsight-app-e7eead98-b607-4d55-a1cf-5df1f389ac14" data-elfsight-app-lazy></div>
-        <p class="help" style="text-align:center; margin-top: 14px;">
-          <a href="https://www.google.com/maps/place/La+Trame+de+Bertrand" target="_blank" rel="noopener">Voir tous les avis sur Google ↗</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" aria-label="Contact & Localisation">
-    <div class="container contact-grid" data-aos="fade-up">
-      <div class="card">
-        <h2>Contact & <span class="grad">Localisation</span></h2>
-        <div class="contact-list" style="margin-top:10px">
-          <p><strong>Bertrand Avril</strong></p>
-          <p>📍 8 rue Saint Melaine, 35550 Lieuron</p>
-          <p>📞 <a href="tel:0664882125">06 64 88 21 25</a></p>
-          <p>📧 <a href="mailto:contact@latramebertrand.fr">contact@latramebertrand.fr</a></p>
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="https://i.imgur.com/zGtWjIG.jpeg" alt="Jardin et Roulotte de Bertrand">
         </div>
-        <hr style="border:none; border-top:1px dashed var(--border); margin: 16px 0;" />
-        <form id="contactForm" novalidate>
-          <div>
-            <label for="nom">Nom</label>
-            <input id="nom" name="nom" type="text" placeholder="Votre nom" required />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="vous@exemple.fr" required />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
-          </div>
-          <button class="btn btn-primary" type="submit">✉️ Envoyer</button>
-          <p class="help">En envoyant, un e‑mail prérempli s’ouvrira dans votre client mail.</p>
-        </form>
-      </div>
-      <div class="card" style="padding:0; overflow:hidden">
-        <iframe title="Carte – La Trame de Bertrand" src="https://maps.google.com/maps?q=8%20rue%20Saint%20Melaine,%20Lieuron&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0; width:100%; height:100%; min-height:420px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
+        <div class="container hero-content">
+            <span class="surtitle">Bien-être • Équilibre • Respiration</span>
+            <h1>Une approche douce pour réharmoniser le corps</h1>
+            <p class="lead">La Trame est une méthode vibratoire qui relance la circulation de l'information dans l'organisme pour retrouver un équilibre global.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Me contacter</a>
+                <a href="#methode" class="btn btn-outline">Découvrir la méthode</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <div class="container footer-row">
-      <div>© <span id="year"></span> La Trame de Bertrand</div>
-      <div style="display:flex; gap:14px; align-items:center;">
-        <a href="#accueil">Haut de page</a>
-        <span aria-hidden="true">•</span>
-        <a href="#" onclick="alert('À compléter : Mentions légales'); return false;">Mentions légales</a>
-      </div>
-    </div>
-  </footer>
+    <section id="methode" class="section-padding bg-light">
+        <div class="container grid-2">
+            <div class="text-block">
+                <h2>À l’origine de La Trame</h2>
+                <p>Créée par <strong>Patrick Burensteinas</strong> dans les années 1990, La Trame agit sur la circulation de l'information dans le corps afin de restaurer l'équilibre.</p>
+                <p>La méthode met en évidence un plan d’information nécessaire au bon fonctionnement du corps, comparable à un canevas — les fils de trame d’un tissu — sur lequel circule l’information essentielle aux cellules et organes.</p>
+                <p>Une perturbation de cette circulation peut entraîner des déséquilibres, voire du mal‑être. L’objectif de la séance est de relancer cette circulation pour retrouver un équilibre global.</p>
+            </div>
+            <div class="image-block">
+                <img src="https://i.imgur.com/RCc3fSS.jpeg" alt="Flyers et présentation de la Trame">
+            </div>
+        </div>
+    </section>
 
-  <!-- Elfsight -->
-  <script src="https://static.elfsight.com/platform/platform.js" async></script>
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <section id="deroulement" class="section-padding">
+        <div class="container">
+            <div class="centered-header">
+                <h2>La séance : Pour qui ? Comment ?</h2>
+                <p class="subtitle">Elle s’adresse à tous, adulte ou enfant.</p>
+            </div>
 
-  <script>
-    // ===== AOS
-    document.addEventListener('DOMContentLoaded', () => AOS.init({ once: true, offset: 80 }));
+            <div class="grid-3 features">
+                <div class="feature-card">
+                    <h3>Le Geste</h3>
+                    <p>Le praticien pose les mains sur la personne habillée et réalise une séquence de 16 gestes codifiés par un toucher subtil sur le tronc, les pieds et la tête. Cette pratique ne s’apparente en aucune façon à un massage.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Le Ressenti</h3>
+                    <p>Lors de la séance, il s’opère une libération progressive des émotions. Après la séance, il s’en suit le plus souvent un état d’apaisement qui permet le rééquilibrage et l’intégration du soin.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Le Rythme</h3>
+                    <p>Les séances sont idéalement espacées de 3 à 4 semaines afin de favoriser une circulation harmonieuse et de permettre au corps de s’autoréguler.</p>
+                </div>
+            </div>
 
-    // ===== Active link on scroll
-const sectionIds = ['accueil','presentation','therapie','praticien','avis','contact'];
-const links = Array.from(document.querySelectorAll('header a[href^="#"]'));
-const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
-const onScroll = () => {
-  const fromTop = window.scrollY + 120;
-  let currentId = null;
-  for (const sec of sections) {
-    if (sec.offsetTop <= fromTop) currentId = sec.id;
-  }
-  links.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === `#${currentId}`));
-};
-window.addEventListener('scroll', onScroll);
-onScroll();
-// ===== Burger / Dropdown menu (simple)
-const burger = document.querySelector('.burger');
-const dropdown = document.getElementById('topMenu');
-const toggleDropdown = (open) => {
-  dropdown.classList.toggle('open', open);
-  dropdown.setAttribute('aria-hidden', (!open).toString());
-  burger.setAttribute('aria-expanded', open.toString());
-  document.body.style.overflow = open ? 'hidden' : '';
-};
-burger.addEventListener('click', () => toggleDropdown(!dropdown.classList.contains('open')));
-dropdown.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleDropdown(false)));
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggleDropdown(false); });
-window.addEventListener('scroll', () => { if (dropdown.classList.contains('open')) toggleDropdown(false); });
+            <div class="benefits-box">
+                <h3>Les bienfaits couramment observés</h3>
+                <ul class="check-list">
+                    <li>Apaisement global</li>
+                    <li>Clarification et capacité à faire des choix</li>
+                    <li>Émergence de nouveaux potentiels</li>
+                    <li>Libération des émotions prisonnières (colère, peur, tristesse)</li>
+                </ul>
+                <p class="disclaimer"><em>Note : Aucun diagnostic médical n’est effectué. Une séance de Trame ne remplace en aucune façon une consultation médicale.</em></p>
+            </div>
+        </div>
+    </section>
 
-    // ===== Lightbox Gallery (simple & responsive)
-    const grid = document.getElementById('gallery');
-    const thumbs = Array.from(grid.querySelectorAll('img'));
-    const lb = document.getElementById('lightbox');
-    const lbImg = document.getElementById('lightbox-img');
-    const lbClose = lb.querySelector('.lb-close');
-    const lbPrev = lb.querySelector('.lb-nav.prev');
-    const lbNext = lb.querySelector('.lb-nav.next');
-    let cur = 0;
+    <section id="praticien" class="section-padding bg-sage text-white">
+        <div class="container grid-2 reverse-mobile">
+            <div class="image-block">
+                <img src="https://i.imgur.com/waN1Dz8.jpeg" alt="Intérieur de la roulotte de soin">
+            </div>
+            <div class="text-block">
+                <h2>Bertrand Avril, praticien certifié</h2>
+                <p class="lead">Mon parcours vers l’accompagnement au mieux‑être.</p>
+                
+                <p>Je m’appelle Bertrand Avril. Depuis l’enfance, je cherche à comprendre comment le monde et les autres fonctionnent.</p>
+                <p>À 47 ans, j’ai vécu une expérience de vie qui a été déterminante : un infarctus m’a transformé. Après avoir eu plusieurs métiers dans le bâtiment (sculpture, maçonnerie, taille de pierre, menuiserie), mon avenir professionnel s’est tourné naturellement vers le bien-être.</p>
+                <p>J’ai donc suivi une formation de 18 mois qui m’a permis d’obtenir la certification de praticien de la trame. Depuis avril 2023, j’exerce dans une roulotte avec des pierres naturelles.</p>
+            </div>
+        </div>
+    </section>
 
-    const openLB = (i) => { cur = i; const img = thumbs[cur]; lbImg.src = img.getAttribute('data-full') || img.src; lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow = 'hidden'; };
-    const closeLB = () => { lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); document.body.style.overflow = ''; };
-    const show = (i) => openLB((i + thumbs.length) % thumbs.length);
+    <section id="lieu" class="section-padding">
+        <div class="container">
+            <div class="centered-header">
+                <h2>Quelques vues du lieu</h2>
+                <p>Découvrez l’ambiance du cabinet et de la roulotte.</p>
+            </div>
+            <div class="gallery-grid">
+                <img src="https://i.imgur.com/IpY6Fvs.jpeg" alt="Entrée du cabinet" loading="lazy">
+                <img src="https://i.imgur.com/1R6dPvQ.jpeg" alt="Salle d’attente" loading="lazy">
+                <img src="https://i.imgur.com/1uZKZH4.jpeg" alt="Roulotte vue de loin" loading="lazy">
+                <img src="https://i.imgur.com/UHkROub.jpeg" alt="Panneau La maison du bien-être" loading="lazy">
+            </div>
+        </div>
+    </section>
 
-    thumbs.forEach((img, i) => img.addEventListener('click', () => openLB(i)));
-    lbClose.addEventListener('click', closeLB);
-    lb.addEventListener('click', (e) => { if (e.target === lb) closeLB(); });
+    <section id="avis" class="section-padding bg-light">
+        <div class="container centered-header">
+            <h2>Ils en parlent le mieux</h2>
+            <div class="elfsight-placeholder">
+                <div class="elfsight-app-e7eead98-b607-4d55-a1cf-5df1f389ac14" data-elfsight-app-lazy></div>
+                <a href="https://www.google.com/maps/place/La+Trame+de+Bertrand" target="_blank" class="link-google">Voir tous les avis sur Google &rarr;</a>
+            </div>
+        </div>
+    </section>
 
-    const prevImg = () => show(cur - 1);
-    const nextImg = () => show(cur + 1);
-    lbPrev.addEventListener('click', (e) => { e.stopPropagation(); prevImg(); });
-    lbNext.addEventListener('click', (e) => { e.stopPropagation(); nextImg(); });
+    <footer id="contact">
+        <div class="container grid-2 footer-content">
+            <div class="contact-info">
+                <h2>Contact & Localisation</h2>
+                <address>
+                    <p class="name"><strong>Bertrand Avril</strong></p>
+                    <p>📍 8 rue Saint Melaine, 35550 Lieuron</p>
+                    <p>📞 <a href="tel:0664882125">06 64 88 21 25</a></p>
+                    <p>📧 <a href="mailto:contact@latramebertrand.fr">contact@latramebertrand.fr</a></p>
+                </address>
 
-    // Clavier + ESC
-    document.addEventListener('keydown', (e) => {
-      if (!lb.classList.contains('open')) return;
-      if (e.key === 'Escape') closeLB();
-      if (e.key === 'ArrowLeft') prevImg();
-      if (e.key === 'ArrowRight') nextImg();
-    });
+                <form id="contactForm" class="simple-form">
+                    <label for="nom">Nom</label>
+                    <input id="nom" name="nom" type="text" placeholder="Votre nom" required>
+                    
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="votre@email.com" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Comment puis-je vous aider ?" required></textarea>
+                    
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    <small>Ouvrira votre logiciel de messagerie par défaut.</small>
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe title="Carte – La Trame de Bertrand" src="https://maps.google.com/maps?q=8%20rue%20Saint%20Melaine,%20Lieuron&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© <span id="year"></span> La Trame de Bertrand • <a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
 
-    // Gestes (swipe simple)
-    let sx = 0, dx = 0, down = false;
-    lbImg.addEventListener('pointerdown', (e) => { down = true; sx = e.clientX; });
-    window.addEventListener('pointerup', () => { if (!down) return; down = false; if (Math.abs(dx) > 40) (dx > 0 ? prevImg() : nextImg()); dx = 0; });
-    window.addEventListener('pointermove', (e) => { if (!down) return; dx = e.clientX - sx; });
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <script>
+        // Menu Mobile
+        const toggle = document.querySelector('.mobile-toggle');
+        const nav = document.querySelector('.main-nav');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            toggle.classList.toggle('active');
+        });
+        
+        // Fermer le menu au clic sur un lien
+        document.querySelectorAll('.main-nav a').forEach(a => {
+            a.addEventListener('click', () => {
+                nav.classList.remove('open');
+                toggle.classList.remove('active');
+            });
+        });
 
-    // ===== Contact form -> mailto
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const nom = document.getElementById('nom').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      if (!nom || !email || !message) { alert('Merci de remplir tous les champs.'); return; }
-      const body = encodeURIComponent(`Nom: ${nom}
-Email: ${email}
+        // Formulaire Mailto
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nom = document.getElementById('nom').value;
+            const message = document.getElementById('message').value;
+            window.location.href = `mailto:contact@latramebertrand.fr?subject=Contact Site Web&body=De: ${nom}%0D%0A%0D%0A${message}`;
+        });
 
-${message}`);
-      window.location.href = `mailto:contact@latramebertrand.fr?subject=Demande via le site&body=${body}`;
-    });
-
-    // ===== Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "La Trame de Bertrand",
-    "image": "https://i.imgur.com/zGtWjIG.jpeg",
-    "telephone": "+33664882125",
-    "email": "contact@latramebertrand.fr",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "8 rue Saint Melaine",
-      "postalCode": "35550",
-      "addressLocality": "Lieuron",
-      "addressCountry": "FR"
-    }
-  }
-  </script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
